@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="321.0" y="642.0">Facade</node>
+    <node x="321.0" y="378.0">Nuzzle</node>
+    <node x="0.0" y="80.0">Poliwhirl</node>
+    <node x="0.0" y="642.0">Wake_Up_Slap</node>
+    <node x="4.0" y="160.0">Politoed</node>
+    <node x="729.0" y="763.0">Emolga</node>
+    <node x="267.0" y="763.0">Confide</node>
+    <node x="0.0" y="763.0">Eerie_Impulse</node>
+    <node x="0.0" y="521.0">Rest</node>
+    <node x="534.0" y="763.0">Laba_2</node>
+    <node x="338.0" y="0.0">Shock_Wave</node>
+    <node x="165.0" y="0.0">Helioptile</node>
+    <node x="169.0" y="80.0">Heliolisk</node>
+    <node x="0.0" y="378.0">Rock_Tomb</node>
+    <node x="331.0" y="521.0">Double_Slap</node>
+    <node x="321.0" y="235.0">Thunderbolt</node>
+    <node x="8.0" y="0.0">Poliwag</node>
+    <node x="0.0" y="235.0">Low_Sweep</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Politoed" target="Poliwhirl">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="Poliwhirl" target="Poliwag">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="Heliolisk" target="Helioptile">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.5151627523691801" x="1345.338852740982" y="400.52124773376556" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

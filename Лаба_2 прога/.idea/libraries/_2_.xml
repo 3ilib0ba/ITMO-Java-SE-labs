@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Лаба_2 прога">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Pokemon.jar!/" />
+      <root url="jar://$PROJECT_DIR$/MyPok.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,33 @@
+public class ADAD {
+    public static void main(String[] args) {
+        A a = new B();
+        B b = new B();
+
+        System.out.println();
+    }
+}
+
+class A {
+    static {
+        System.out.println("1");
+    }
+    {
+        System.out.println("2");
+    }
+    int a = 3;
+    A() {
+        System.out.println("3");
+    }
+}
+
+class B extends A {
+    static {
+        System.out.println("4");
+    }
+    {
+        System.out.println("5");
+    }
+    B() {
+        System.out.println("6");
+    }
+}

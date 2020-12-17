@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="с хелиоса вторая лаба">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/с хелиоса вторая лаба/MAINJAR.jar!/" />
+      <root url="jar://$PROJECT_DIR$/с хелиоса вторая лаба/Pokemon.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
