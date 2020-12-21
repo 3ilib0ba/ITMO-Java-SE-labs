@@ -19,20 +19,20 @@ public class Factory {
     }
 
     public String toString() {
-            if (product == TypeFactory.CANDY) {
-                return "(конфетная фабрика " + name + ")";
-            } else if (product == TypeFactory.BAKERY) {
-                return "(пекарня " + name + ")";
-            } else {
-                return name;
-            }
+        if (product == TypeFactory.CANDY) {
+            return "(конфетная фабрика " + name + ")";
+        } else if (product == TypeFactory.BAKERY) {
+            return "(пекарня " + name + ")";
+        } else {
+            return name;
+        }
     }
 
-    public void setOwner(Person owner){
+    public void setOwner(Person owner) {
         this.owner = owner;
     }
 
-    public Person getOwner(){
+    public Person getOwner() {
         return owner;
     }
 }

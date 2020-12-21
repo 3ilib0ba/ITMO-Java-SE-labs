@@ -3,51 +3,49 @@
   <ID>JAVA</ID>
   <OriginalElement />
   <nodes>
-    <node x="0.0" y="620.0">builds.AllShops</node>
-    <node x="312.0" y="235.0">personsandpeoples.Dunno</node>
-    <node x="124.0" y="390.0">objects.Product</node>
-    <node x="494.0" y="310.0">interfaces.WithStore</node>
-    <node x="314.0" y="620.0">builds.Factory</node>
-    <node x="0.0" y="545.0">cities.Davilon</node>
-    <node x="352.0" y="80.0">allmedia.Magazine</node>
-    <node x="172.0" y="80.0">allmedia.ImportantEvent</node>
-    <node x="463.0" y="620.0">Laba</node>
-    <node x="-7.7777777777777715" y="391.1111111111111">objects.Service</node>
-    <node x="148.0" y="235.0">personsandpeoples.FactoryOwner</node>
-    <node x="273.0" y="390.0">allmedia.Photography.AdvertisingPhoto</node>
-    <node x="46.0" y="310.0">objects.ObjectToBuy</node>
-    <node x="0.0" y="80.0">allmedia.VisiblePlaces</node>
-    <node x="510.0" y="390.0">builds.Store</node>
-    <node x="176.0" y="0.0">interfaces.WithMassMedia</node>
-    <node x="293.0" y="310.0">allmedia.Photography</node>
-    <node x="0.0" y="235.0">personsandpeoples.Aboriginal</node>
-    <node x="12.0" y="465.0">cities.City</node>
-    <node x="394.0" y="465.0">builds.Typefactory</node>
-    <node x="157.0" y="620.0">data.DayMonth</node>
-    <node x="172.0" y="155.0">personsandpeoples.Person</node>
-    <node x="149.0" y="465.0">objects.ProceedsAndEstimate</node>
+    <node x="708.0" y="700.0">builds.shops.AllShops</node>
+    <node x="0.0" y="700.0">personsandpeoples.peoplesexceptions.ArrayOverflow</node>
+    <node x="156.0" y="235.0">interfaces.WithStore</node>
+    <node x="0.0" y="235.0">builds.shops.Institution</node>
+    <node x="494.0" y="550.0">cities.Davilon</node>
+    <node x="424.0" y="80.0">personsandpeoples.AllPersons</node>
+    <node x="197.0" y="700.0">builds.TypeFactory</node>
+    <node x="152.0" y="80.0">personsandpeoples.FactoryOwner</node>
+    <node x="273.0" y="550.0">allmedia.Photography.AdvertisingPhoto</node>
+    <node x="321.0" y="315.0">allmedia.VisiblePlaces</node>
+    <node x="473.0" y="235.0">interfaces.WithMassMedia</node>
+    <node x="98.0" y="315.0">builds.shops.Store</node>
+    <node x="293.0" y="470.0">allmedia.Photography</node>
+    <node x="551.0" y="700.0">data.DayMonth</node>
+    <node x="269.0" y="625.0">objects.ProceedsAndEstimate</node>
+    <node x="0.0" y="160.0">personsandpeoples.Human.AllPeoplesInCity</node>
+    <node x="78.0" y="395.0">builds.shops.Store.AllStories</node>
+    <node x="316.0" y="80.0">personsandpeoples.Dunno</node>
+    <node x="0.0" y="550.0">objects.Product</node>
+    <node x="0.0" y="775.0">builds.Factory</node>
+    <node x="514.0" y="625.0">interfaces.WithDrSyringe</node>
+    <node x="378.0" y="700.0">personsandpeoples.HealthType</node>
+    <node x="493.0" y="315.0">allmedia.Magazine</node>
+    <node x="625.0" y="315.0">allmedia.ImportantEvent</node>
+    <node x="149.0" y="775.0">Laba</node>
+    <node x="124.0" y="550.0">objects.Service</node>
+    <node x="46.0" y="470.0">objects.ObjectToBuy</node>
+    <node x="0.0" y="625.0">builds.shopsexceptions.NegativeCountException</node>
+    <node x="506.0" y="470.0">cities.City</node>
+    <node x="44.0" y="80.0">personsandpeoples.Human</node>
+    <node x="244.0" y="0.0">personsandpeoples.Person</node>
   </nodes>
   <notes />
   <edges>
-    <edge source="builds.Store" target="interfaces.WithStore">
-      <point x="0.0" y="-15.0" />
-      <point x="0.0" y="15.0" />
-    </edge>
     <edge source="allmedia.Magazine" target="interfaces.WithMassMedia">
       <point x="0.0" y="-15.0" />
-      <point x="408.0" y="55.0" />
-      <point x="302.66666666666663" y="55.0" />
-      <point x="50.66666666666663" y="15.0" />
+      <point x="0.0" y="15.0" />
     </edge>
     <edge source="personsandpeoples.FactoryOwner" target="personsandpeoples.Person">
       <point x="0.0" y="-15.0" />
-      <point x="0.0" y="15.0" />
-    </edge>
-    <edge source="personsandpeoples.Aboriginal" target="personsandpeoples.Person">
-      <point x="0.0" y="-15.0" />
-      <point x="64.0" y="210.0" />
-      <point x="188.0" y="210.0" />
-      <point x="-32.0" y="15.0" />
+      <point x="224.0" y="60.0" />
+      <point x="280.0" y="60.0" />
+      <point x="-12.0" y="15.0" />
     </edge>
     <edge source="cities.Davilon" target="cities.City">
       <point x="0.0" y="-15.0" />
@@ -55,42 +53,76 @@
     </edge>
     <edge source="allmedia.VisiblePlaces" target="interfaces.WithMassMedia">
       <point x="0.0" y="-15.0" />
-      <point x="76.0" y="55.0" />
-      <point x="201.33333333333334" y="55.0" />
-      <point x="-50.66666666666666" y="15.0" />
-    </edge>
-    <edge source="allmedia.ImportantEvent" target="interfaces.WithMassMedia">
-      <point x="0.0" y="-15.0" />
-      <point x="0.0" y="15.0" />
-    </edge>
-    <edge source="allmedia.Photography.AdvertisingPhoto" target="allmedia.Photography">
-      <point x="-44.0" y="-15.0" />
-      <point x="317.0" y="365.0" />
-      <point x="327.0" y="365.0" />
-      <point x="-34.0" y="15.0" />
-    </edge>
-    <edge source="objects.Product" target="objects.ObjectToBuy">
-      <point x="0.0" y="-15.0" />
-      <point x="176.0" y="365.0" />
-      <point x="148.0" y="365.0" />
-      <point x="34.0" y="15.0" />
-    </edge>
-    <edge source="objects.Service" target="objects.ObjectToBuy">
-      <point x="0.0" y="-15.0" />
-      <point x="52.0" y="365.0" />
-      <point x="80.0" y="365.0" />
-      <point x="-34.0" y="15.0" />
+      <point x="397.0" y="290.0" />
+      <point x="498.3333333333333" y="290.0" />
+      <point x="-50.666666666666686" y="15.0" />
     </edge>
     <edge source="personsandpeoples.Dunno" target="personsandpeoples.Person">
       <point x="0.0" y="-15.0" />
-      <point x="356.0" y="210.0" />
-      <point x="252.0" y="210.0" />
-      <point x="32.0" y="15.0" />
+      <point x="360.0" y="60.0" />
+      <point x="304.0" y="60.0" />
+      <point x="12.0" y="15.0" />
+    </edge>
+    <edge source="personsandpeoples.Human" target="personsandpeoples.Person">
+      <point x="0.0" y="-15.0" />
+      <point x="88.0" y="50.0" />
+      <point x="256.0" y="50.0" />
+      <point x="-36.0" y="15.0" />
+    </edge>
+    <edge source="builds.shops.Store" target="builds.shops.Institution">
+      <point x="-22.0" y="-15.0" />
+      <point x="120.0" y="290.0" />
+      <point x="68.0" y="290.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="allmedia.ImportantEvent" target="interfaces.WithMassMedia">
+      <point x="0.0" y="-15.0" />
+      <point x="705.0" y="290.0" />
+      <point x="599.6666666666666" y="290.0" />
+      <point x="50.66666666666663" y="15.0" />
+    </edge>
+    <edge source="objects.Product" target="objects.ObjectToBuy">
+      <point x="0.0" y="-15.0" />
+      <point x="52.0" y="525.0" />
+      <point x="80.0" y="525.0" />
+      <point x="-34.0" y="15.0" />
+    </edge>
+    <edge source="objects.Service" target="objects.ObjectToBuy">
+      <point x="0.0" y="-15.0" />
+      <point x="176.0" y="525.0" />
+      <point x="148.0" y="525.0" />
+      <point x="34.0" y="15.0" />
+    </edge>
+    <edge source="personsandpeoples.AllPersons" target="personsandpeoples.Person">
+      <point x="0.0" y="-15.0" />
+      <point x="488.0" y="50.0" />
+      <point x="328.0" y="50.0" />
+      <point x="36.0" y="15.0" />
+    </edge>
+    <edge source="personsandpeoples.Human.AllPeoplesInCity" target="personsandpeoples.Human">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="builds.shops.Store.AllStories" target="builds.shops.Store">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="builds.shops.Store" target="interfaces.WithStore">
+      <point x="22.0" y="-15.0" />
+      <point x="164.0" y="290.0" />
+      <point x="216.0" y="290.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="allmedia.Photography.AdvertisingPhoto" target="allmedia.Photography">
+      <point x="44.0" y="-15.0" />
+      <point x="405.0" y="525.0" />
+      <point x="395.0" y="525.0" />
+      <point x="34.0" y="15.0" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="0.9" x="307.0" y="315.0" />
+  <settings layout="Hierarchic Group" zoom="0.7121212121212122" x="409.99999999999994" y="402.49999999999994" />
   <SelectedNodes>
-    <node>objects.Service</node>
+    <node>interfaces.WithStore</node>
   </SelectedNodes>
   <Categories>
     <Category>Inner Classes</Category>

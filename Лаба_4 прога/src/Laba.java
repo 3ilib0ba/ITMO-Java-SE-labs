@@ -1,8 +1,10 @@
 import allmedia.*;
 import builds.*;
+import builds.shops.AllShops;
+import builds.shops.Store;
 import cities.Davilon;
 import data.DayMonth;
-import exceptions.NegativeCount;
+import builds.shopsexceptions.NegativeCountException;
 import interfaces.WithDrSyringe;
 import objects.ProceedsAndEstimate;
 import objects.Product;
@@ -14,12 +16,12 @@ public class Laba {
         seller.setMoney(seller.getMoney() + price);
     }
 
-    public static void main(String[] args) throws NegativeCount {
+    public static void main(String[] args) throws NegativeCountException {
         DayMonth.nextMoyth();
         DayMonth.nextDay();
         Davilon davilon = new Davilon();
-        Human[] casualHumans = new Human[100];
-        for (int i = 0; i < casualHumans.length; i++){
+        Human[] casualHumans = new Human[Human.AllPeoplesInCity.getPopulation()];
+        for (int i = 0; i < casualHumans.length; i++) {
             casualHumans[i] = new Human();
         }
         FactoryOwner dawnOwner = new FactoryOwner("Владелец фабрики Заря");
@@ -69,7 +71,7 @@ public class Laba {
                 this.price = price;
             }
 
-            public String getStreet(){
+            public String getStreet() {
                 return street;
             }
 
@@ -77,7 +79,6 @@ public class Laba {
                 return allProceed;
             }
         };
-        //Factory HouseDr = new Factory("дом доктора Шприца", TypeService.PHARMACY, DrSyringe);
 
         Dunno dunno = new Dunno("Незнайка", "лунный город " + davilon, "скафандр");
         Product honeyCake = new Product("коврижка", dawn, 25);
@@ -90,7 +91,6 @@ public class Laba {
         Photography p2 = new Photography("Незнайка вылез из автомашины!");
         Photography p3 = new Photography("Незнайка прибыл в гостиницу");
         Photography p4 = new Photography("Незнайка кушает коврижку");
-        Photography p5 = new Photography("Адресс доктора " + DrSyringe.getStreet());
 
         VisiblePlaces allPlaces = new VisiblePlaces();
         allPlaces.printing(p1);
@@ -107,14 +107,11 @@ public class Laba {
 
         {
             AllShops.addProductAllShops(honeyCake);
-            int countHoneyCake = 1; // сколько купил каждый челавечек
-            if (countHoneyCake <= 0) { // Проверка на покупку положительного числа коврижек
-                throw new NegativeCount("Нельзя купить такое число коврижек");
+            int countHoneyCake = 1; // сколько купил каждый человек
+            for (int j = 0; j < Human.AllPeoplesInCity.getPopulation(); j++) {
+                AllShops.buyProduct(Human.AllPeoplesInCity.allPeoples[j], honeyCake, countHoneyCake);
             }
-            for (int j = 0; j < Human.getPopulation(); j++){
-                AllShops.buyProduct(Human.allPeoples[j], honeyCake, countHoneyCake);
-            }
-            if (honeyCake.allProceed.PROCEEDS[DayMonth.month][DayMonth.day] > 1500d){
+            if (honeyCake.allProceed.PROCEEDS[DayMonth.month][DayMonth.day] > 1500d) {
                 System.out.println(honeyCake.getFactory().getOwner() +
                         " заработал большие деньги за этот день(больше 1500 гривен)");
             }
@@ -135,17 +132,18 @@ public class Laba {
             }
         }
         {
+            Photography p5 = new Photography("Адрес доктора " + DrSyringe.getStreet());
             Photography.AdvertisingPhoto addDrSyringe = p5.new AdvertisingPhoto(dunno, DrSyringe.getPerson());
             allMagazines = new Magazine();
             allMagazines.printing(p5);
             allMagazines.printing(addDrSyringe);
             allMagazines.read();
             DrSyringe.setPrice(200.0);
-            for (int j = 0; j < Human.getPopulation(); j++){
-                DrSyringe.treatment(Human.allPeoples[j]);
+            for (int j = 0; j < Human.AllPeoplesInCity.getPopulation(); j++) {
+                DrSyringe.treatment(Human.AllPeoplesInCity.allPeoples[j]);
             }
             if (DrSyringe.getAllProceed().getCount(DayMonth.month, DayMonth.day) > 70) {
-                System.out.println("Денюжки потекли рекой к доктору Шприцу(за день принято много посетителей)");
+                System.out.println("Денежки потекли рекой к доктору Шприцу(за день принято много посетителей)");
             }
         }
 

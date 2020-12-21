@@ -45,7 +45,7 @@ public abstract class Person {
         this.wear = wear;
     }
 
-    public void setMoney(double money){
+    public void setMoney(double money) {
         this.money = money;
     }
 

@@ -2,7 +2,7 @@
   <artifact type="jar" build-on-make="true" name="Лаба_3 прога:jar">
     <output-path>$PROJECT_DIR$/out/artifacts/_3__jar</output-path>
     <root id="archive" name="Лаба_3 прога.jar">
-      <element id="module-output" name="Лаба_3 прога" />
+      <element id="module-output" name="Лаба_4 прога" />
     </root>
   </artifact>
 </component>
